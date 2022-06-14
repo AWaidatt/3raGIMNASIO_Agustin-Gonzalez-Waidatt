@@ -1,16 +1,16 @@
 $bg-header:#303841;
 $bg-section1:#3A4750;
-$bg-section2:#EEEEEE;
+$bg-section2:#dedcdc;
 $bg-section3: #F6C90E;
 
 
 @import "fuentes";
 
 
-
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -20,7 +20,7 @@ $bg-section3: #F6C90E;
     grid-template-columns: 45% 55% ;
     height: 130px;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(17, 17, 17);
     position: sticky;
     top: 0%;
     z-index: 10;
@@ -49,17 +49,21 @@ $bg-section3: #F6C90E;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-
-        &:hover{
-
-        }
         
 
         a{
             text-decoration: none;
             color: white;
             text-transform: uppercase;
+
+            
+
+
+            &:hover{
+                transform: scale(1.1);
+            }
         }
+
     }
 
     
@@ -73,6 +77,19 @@ $bg-section3: #F6C90E;
     width: 100%;
     position: relative;
     top: 0;
+
+    #t1{
+        width: 100%;
+        top: 45%;
+        position: absolute;
+        text-align: center;
+        z-index: 9;
+        color: white;
+        font-size: 30px;
+        
+        
+    }
+    
 
     .carrusel-inner{
 
@@ -92,23 +109,103 @@ $bg-section3: #F6C90E;
 
 }
 
-#t1{
-    width: 100%;
-    top: 380px;
-    position: absolute;
-    text-align: center;
-    z-index: 9;
-    color: white;
-    font-size: 30px;
-    
-}
+
 
 
 .section__1{
     height: 100vh;
+    margin-top: 100px;
     
-    div{
-        height: 100px;
+    .fondos1{
+        height: 100vh;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #dedcdc;
+        padding: 10px;
+        
+        #titulos1{
+            text-align: center;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+
+
+        .grid1{
+            height: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 36% 36%   ;
+            align-items: center;
+              
+            div{
+                justify-items: center;
+                
+                .article1{
+                    font-size: 20px;
+                    justify-content: center;
+
+                    div{
+                        text-align: center;
+                        justify-items: center;
+                        img{
+                            justify-content: center;
+                        }
+
+                    }
+                
+
+                }
+            }
+    
+
+        }
+    }     
+
+} 
+
+
+
+
+
+
+.section3{
+    background-color: $bg-section3;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .class__section3{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 50px;
+
+    }
+
+    
+}
+
+
+.section4{
+    background-color: $bg-header;
+    height: 110vh;
+
+    .content__s4{
+        h1{
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .fotos__actividades{
+            display: flex;
+            justify-content: space-evenly;        
+        }
+
+
     }
 
 }
@@ -118,6 +215,193 @@ $bg-section3: #F6C90E;
 
 
 
-.section3{
-    background-color: $bg-section3;
+#sectabla{
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    justify-items: center;
+    z-index: 4;
+
+    background-color: $bg-header;
+
+
+    h1{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+   
+
+
+    .horarios{
+   
+        width: 0 auto;
+        height: 150vh;
+
+        background-color: $bg-header;
+        
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(7, auto)  ;
+        grid-template-rows: repeat(15, 1fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 100px;
+        justify-content: center;
+        justify-items: center;
+    
+    
+        div{
+            justify-items: center;
+            height: 50px;
+            z-index: 8;
+            
+        }
+    
+        .dia{
+            border-bottom: solid 1px white;
+            height: 25px;
+        }
+    }
+
+
 }
+
+
+footer{
+    width: 100%;
+    background-color: $bg-section3;
+    display: flex;
+    height: 220px;
+    align-items: center;
+    z-index: 10;
+
+    .footer__section{
+        margin-left: 10px;
+    }
+
+    .instapic{
+        margin-right: 10px;
+        width: 100%;
+
+        a{
+            img{
+                float: right;
+                margin-right: 10px;
+            }
+        }
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: white;
+    height: 1.5px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.iniciosesion{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/fondois.jpg);
+    color: white;
+    
+
+
+    .datos1{
+        width: 80%;
+        margin: 0 auto;
+        background-color: $bg-header;
+        height: 80vh;
+
+        form{
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            align-content: center;
+
+            #inputbutton{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+           
+        }
+    }
+}
+
+
