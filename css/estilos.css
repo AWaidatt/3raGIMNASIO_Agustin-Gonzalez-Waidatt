@@ -31,7 +31,7 @@
       text-decoration: none;
       color: white;
       text-transform: uppercase;
-      font-size: 18px;
+      font-size: 15px;
       font-family: 'Roboto', sans-serif;
       text-align: center; }
       .header .header__links a:hover {
@@ -125,7 +125,7 @@
 
 .section4 {
   background-color: #303841;
-  height: 110vh;
+  height: 2000vh;
   font-family: 'Roboto', sans-serif; }
   .section4 .content__s4 h1 {
     text-align: center;
@@ -139,6 +139,7 @@
       color: white;
       text-decoration: none; }
       .section4 .content__s4 .fotos__actividades a img {
+        width: 33%;
         border-radius: 1%; }
 
 #sectabla {
@@ -225,7 +226,7 @@ footer {
     width: 80%;
     margin: 0 auto;
     background-color: #262728;
-    height: 80vh; }
+    height: 85vh; }
     .iniciosesion .datos1 form {
       display: flex;
       flex-direction: column;
@@ -250,14 +251,65 @@ footer {
 
 .section__nosotros {
   background-image: url(../imagenes/pesarusam.jpg);
-  height: 100vh; }
+  height: 120rem; }
   .section__nosotros .caja__nosotros {
     background-color: #262728ae;
-    height: 60vh;
+    height: 75vh;
     width: 75%;
     color: white;
-    margin: 0 auto;
-    border: 1%; }
+    margin: 0 auto; }
+    .section__nosotros .caja__nosotros h1 {
+      text-align: center; }
+    .section__nosotros .caja__nosotros p {
+      margin-left: 15px;
+      margin-right: 15px; }
+    .section__nosotros .caja__nosotros .item__nos {
+      display: flex;
+      margin-top: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+      justify-content: center; }
+      .section__nosotros .caja__nosotros .item__nos h2 {
+        font-size: 20px; }
+      .section__nosotros .caja__nosotros .item__nos img {
+        height: 50px; }
+
+.section__nosotros__ubi {
+  background-color: #303841; }
+  .section__nosotros__ubi h1 {
+    background-color: #303841;
+    color: white; }
+  .section__nosotros__ubi .section__nosotros__infoubi {
+    width: 100%;
+    height: 65%;
+    background-color: #303841; }
+    .section__nosotros__ubi .section__nosotros__infoubi h1 {
+      color: white;
+      text-align: center; }
+    .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__infoubi1 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 50px; }
+      .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__infoubi1 p {
+        color: white;
+        font-size: 2rem; }
+      .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__infoubi1 iframe {
+        border-radius: 1%; }
+    .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__telefono {
+      display: flex;
+      flex-direction: row;
+      justify-content: stretch;
+      margin-top: 100px;
+      justify-content: center;
+      gap: 20px; }
+      .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__telefono img {
+        height: 60px; }
+      .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__telefono p {
+        color: white;
+        align-items: center;
+        font-size: 40px; }
 
 @media screen and (max-width: 768px) {
   .section__1 {
@@ -277,6 +329,81 @@ footer {
             justify-items: center; }
         .section__1 .fondos1 .grid1 div #img {
           height: 200px; }
+  .section3 {
+    flex-direction: column; }
+    .section3 .class__section3 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; }
+      .section3 .class__section3 a img {
+        height: 150px;
+        width: 150px; }
+  .section4 {
+    font-family: 'Roboto', sans-serif; }
+    .section4 .content__s4 h1 {
+      margin-bottom: 30px;
+      font-size: 25px; }
+    .section4 .content__s4 .fotos__actividades {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 35px; }
+      .section4 .content__s4 .fotos__actividades div a {
+        text-align: center;
+        color: white;
+        text-decoration: none; }
+      .section4 .content__s4 .fotos__actividades div img {
+        border-radius: 1%; }
+  #sectabla {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    justify-items: center;
+    z-index: 4;
+    height: 150vh;
+    background-color: #303841; }
+    #sectabla h1 {
+      text-align: center;
+      margin-bottom: 60px; }
+    #sectabla .horarios {
+      width: 0 auto;
+      height: 1000px;
+      background-color: #303841;
+      gap: 14px;
+      font-size: 12px; }
+      #sectabla .horarios div {
+        justify-items: center;
+        height: 50px;
+        z-index: 8; }
+      #sectabla .horarios .dia {
+        border-bottom: solid 1px white;
+        height: 25px; }
+  footer {
+    width: 100%;
+    background-color: #F6C90E;
+    display: flex;
+    height: 220px;
+    align-items: center;
+    z-index: 10; }
+    footer .footer__section {
+      margin-left: 10px;
+      font-size: 14px; }
+    footer .instapic {
+      margin-right: 10px;
+      width: 100%; }
+      footer .instapic a img {
+        height: 40px;
+        width: 40px; } }
+
+@media screen and (max-width: 900px) {
+  .section__1 {
+    height: 90vh; }
+    .section__1 .fondos1 {
+      height: 85vh; }
+      .section__1 .fondos1 .grid1 div .article1 {
+        font-size: 17px; }
+      .section__1 .fondos1 .grid1 div img#img {
+        height: 250px; }
   .section3 {
     flex-direction: column; }
     .section3 .class__section3 {

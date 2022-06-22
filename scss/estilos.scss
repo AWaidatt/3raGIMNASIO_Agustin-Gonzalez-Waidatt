@@ -57,7 +57,7 @@ $bg-section3: #F6C90E;
             text-decoration: none;
             color: white;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 15px;
             font-family: 'Roboto', sans-serif;
             text-align: center;
 
@@ -243,7 +243,7 @@ $bg-section3: #F6C90E;
 
 .section4{
     background-color: $bg-header;
-    height: 110vh;
+    height: 2000vh;
     font-family: 'Roboto', sans-serif;
 
 
@@ -263,6 +263,7 @@ $bg-section3: #F6C90E;
                 text-decoration: none;
 
                 img{
+                    width: 33%;
                     border-radius: 1%;
                 }
             }
@@ -451,7 +452,7 @@ footer{
         width: 80%;
         margin: 0 auto;
         background-color: #262728;
-        height: 80vh;
+        height: 85vh;
 
         form{
             display: flex;
@@ -502,16 +503,107 @@ footer{
 
 .section__nosotros{
     background-image: url(../imagenes/pesarusam.jpg);
-    height: 100vh;
+    height: 120rem;
 
     .caja__nosotros{
         background-color: #262728ae;
-        height: 60vh;
+        height: 75vh;
         width: 75%;
         color: white;
         margin: 0 auto;
-        border: 1%;
+
+        h1{
+            text-align: center;
+        }
+        p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .item__nos{
+            display: flex;
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+            justify-content: center;
+
+            h2{
+                font-size: 20px;
+            }
+            
+
+            img{
+                height: 50px;
+                
+                
+            }
+
+
+        }
+
     }
+}
+
+
+.section__nosotros__ubi{
+    background-color: $bg-header;
+
+    h1{
+        background-color: $bg-header;
+
+
+        color: white;
+
+    }
+
+    .section__nosotros__infoubi{
+        width: 100%;
+        height: 65%;
+        background-color: $bg-header;
+       
+        h1{
+            color: white;
+            text-align: center;
+
+        }
+       
+        .section__nosotros__infoubi1{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 50px;
+            p{
+                color: white;
+                font-size: 2rem;
+            }
+            iframe{
+                border-radius: 1%;
+            }
+        }
+
+        .section__nosotros__telefono{
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+            margin-top: 100px;
+            justify-content: center;
+            gap: 20px;
+            
+            img{
+                height: 60px;
+            }
+            p{
+                color: white;
+                align-items: center;
+                font-size: 40px;
+            }
+        }
+
+    }
+
+
+
 }
 
 
@@ -723,3 +815,173 @@ footer{
 
 
 
+@media screen and (max-width: 900px){
+    .section__1{
+        height: 90vh;
+        
+        .fondos1{
+            height: 85vh;
+
+            
+            .grid1{
+
+                div{
+                   
+                    .article1{
+                        font-size: 17px;
+    
+                    }
+
+                    img#img{
+                        height: 250px;
+                    }
+                }
+        
+    
+            }
+
+
+
+        }
+    }
+
+
+
+    .section3{
+        flex-direction: column;
+       
+
+    
+        .class__section3{
+           display: flex;
+           flex-direction: column;
+           gap: 15px;
+
+            a img{
+                height: 150px;
+                width: 150px;
+
+            }   
+
+           
+           
+    
+        }
+    
+        
+    }
+
+
+    .section4{
+        font-family: 'Roboto', sans-serif;
+        
+    
+        .content__s4{
+            h1{
+                margin-bottom: 30px;
+                font-size: 25px;
+            }
+    
+            .fotos__actividades{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 35px;
+                div{
+                    a{
+                        text-align: center;
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    img{
+                        border-radius: 1%;
+                    }
+                } 
+            }
+    
+    
+        }
+    
+    }
+
+
+
+
+
+
+
+    #sectabla{
+        width: 100%;
+        margin: 0 auto;
+        color: white;
+        justify-items: center;
+        z-index: 4;
+        height: 150vh;
+        background-color: $bg-header;
+    
+    
+        h1{
+            text-align: center;
+            margin-bottom: 60px;
+        }
+       
+    
+    
+        .horarios{
+       
+            width: 0 auto;
+            height: 1000px;
+            background-color: $bg-header;
+            
+            gap: 14px;
+
+
+            font-size: 12px;
+        
+        
+            div{
+                justify-items: center;
+                height: 50px;
+                z-index: 8;
+                
+            }
+        
+            .dia{
+                border-bottom: solid 1px white;
+                height: 25px;
+            }
+        }
+    
+    
+    }
+    
+    footer{
+        width: 100%;
+        background-color: $bg-section3;
+        display: flex;
+        height: 220px;
+        align-items: center;
+        z-index: 10;
+    
+        .footer__section{
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    
+        .instapic{
+            margin-right: 10px;
+            width: 100%;
+    
+            a{
+                img{
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            
+        }
+    
+    }
+    
+}
