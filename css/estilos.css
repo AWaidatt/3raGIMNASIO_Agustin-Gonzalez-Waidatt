@@ -125,7 +125,7 @@
 
 .section4 {
   background-color: #303841;
-  height: 2000vh;
+  height: 1000px;
   font-family: 'Roboto', sans-serif; }
   .section4 .content__s4 h1 {
     text-align: center;
@@ -137,9 +137,9 @@
     .section4 .content__s4 .fotos__actividades a {
       text-align: center;
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      width: 33%; }
       .section4 .content__s4 .fotos__actividades a img {
-        width: 33%;
         border-radius: 1%; }
 
 #sectabla {
@@ -148,6 +148,7 @@
   color: white;
   justify-items: center;
   z-index: 4;
+  height: 1300px;
   background-color: #303841; }
   #sectabla h1 {
     text-align: center;
@@ -393,17 +394,68 @@ footer {
       width: 100%; }
       footer .instapic a img {
         height: 40px;
-        width: 40px; } }
+        width: 40px; }
+  .section__nosotros {
+    height: 1500px; }
+    .section__nosotros .caja__nosotros {
+      background-color: #262728ae;
+      height: 1100px; }
+      .section__nosotros .caja__nosotros p {
+        margin-left: 15px;
+        margin-right: 15px; }
+      .section__nosotros .caja__nosotros .item__nos {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: center; }
+        .section__nosotros .caja__nosotros .item__nos h2 {
+          font-size: 20px; }
+        .section__nosotros .caja__nosotros .item__nos img {
+          height: 50px; }
+  .section__nosotros__ubi {
+    height: 1000px; }
+    .section__nosotros__ubi .section__nosotros__infoubi {
+      width: 100%;
+      height: 1000px;
+      background-color: #303841; }
+      .section__nosotros__ubi .section__nosotros__infoubi h1 {
+        color: white;
+        text-align: center; }
+      .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__infoubi1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 50px; }
+        .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__infoubi1 p {
+          color: white;
+          font-size: 2rem; }
+        .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__infoubi1 iframe {
+          border-radius: 1%; }
+      .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__telefono {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        margin-top: 100px;
+        justify-content: center;
+        gap: 20px; }
+        .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__telefono img {
+          height: 60px; }
+        .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__telefono p {
+          color: white;
+          align-items: center;
+          font-size: 40px; } }
 
 @media screen and (max-width: 900px) {
   .section__1 {
-    height: 90vh; }
+    height: 1000px; }
     .section__1 .fondos1 {
-      height: 85vh; }
+      height: 900px; }
       .section__1 .fondos1 .grid1 div .article1 {
         font-size: 17px; }
       .section__1 .fondos1 .grid1 div img#img {
-        height: 250px; }
+        height: 200px; }
   .section3 {
     flex-direction: column; }
     .section3 .class__section3 {
@@ -414,6 +466,7 @@ footer {
         height: 150px;
         width: 150px; }
   .section4 {
+    height: 1300px;
     font-family: 'Roboto', sans-serif; }
     .section4 .content__s4 h1 {
       margin-bottom: 30px;
@@ -454,12 +507,7 @@ footer {
         border-bottom: solid 1px white;
         height: 25px; }
   footer {
-    width: 100%;
-    background-color: #F6C90E;
-    display: flex;
-    height: 220px;
-    align-items: center;
-    z-index: 10; }
+    bottom: 0; }
     footer .footer__section {
       margin-left: 10px;
       font-size: 14px; }
@@ -468,4 +516,37 @@ footer {
       width: 100%; }
       footer .instapic a img {
         height: 40px;
-        width: 40px; } }
+        width: 40px; }
+  .section__nosotros__ubi {
+    height: 1000px; }
+    .section__nosotros__ubi .section__nosotros__infoubi {
+      width: 100%;
+      height: 1000px;
+      background-color: #303841; }
+      .section__nosotros__ubi .section__nosotros__infoubi h1 {
+        color: white;
+        text-align: center; }
+      .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__infoubi1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 50px; }
+        .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__infoubi1 p {
+          color: white;
+          font-size: 2rem; }
+        .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__infoubi1 iframe {
+          border-radius: 1%; }
+      .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__telefono {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        margin-top: 100px;
+        justify-content: center;
+        gap: 20px; }
+        .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__telefono img {
+          height: 60px; }
+        .section__nosotros__ubi .section__nosotros__infoubi .section__nosotros__telefono p {
+          color: white;
+          align-items: center;
+          font-size: 40px; } }

@@ -243,7 +243,7 @@ $bg-section3: #F6C90E;
 
 .section4{
     background-color: $bg-header;
-    height: 2000vh;
+    height: 1000px;
     font-family: 'Roboto', sans-serif;
 
 
@@ -261,9 +261,9 @@ $bg-section3: #F6C90E;
                 text-align: center;
                 color: white;
                 text-decoration: none;
+                width: 33%;
 
                 img{
-                    width: 33%;
                     border-radius: 1%;
                 }
             }
@@ -288,6 +288,7 @@ $bg-section3: #F6C90E;
     color: white;
     justify-items: center;
     z-index: 4;
+    height: 1300px;
 
     background-color: $bg-header;
 
@@ -803,6 +804,96 @@ footer{
     }
 
 
+    .section__nosotros{
+        height: 1500px;
+    
+        .caja__nosotros{
+            background-color: #262728ae;
+            height: 1100px;
+            p{
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+    
+            .item__nos{
+                display: flex;
+                margin-top: 50px;
+                margin-left: 20px;
+                margin-right: 20px;
+                justify-content: center;
+    
+                h2{
+                    font-size: 20px;
+                }
+                
+    
+                img{
+                    height: 50px;
+                    
+                    
+                }
+    
+    
+            }
+    
+        }
+    }
+
+
+    .section__nosotros__ubi{
+        height: 1000px;
+        .section__nosotros__infoubi{
+            width: 100%;
+            height: 1000px;
+            background-color: $bg-header;
+           
+            h1{
+                color: white;
+                text-align: center;
+    
+            }
+           
+            .section__nosotros__infoubi1{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 50px;
+                p{
+                    color: white;
+                    font-size: 2rem;
+                }
+                iframe{
+                    border-radius: 1%;
+                }
+            }
+    
+            .section__nosotros__telefono{
+                display: flex;
+                flex-direction: row;
+                justify-content: stretch;
+                margin-top: 100px;
+                justify-content: center;
+                gap: 20px;
+                
+                img{
+                    height: 60px;
+                }
+                p{
+                    color: white;
+                    align-items: center;
+                    font-size: 40px;
+                }
+            }
+    
+        }
+    
+    
+    
+    }
+    
+
+
 }
 
 
@@ -817,10 +908,10 @@ footer{
 
 @media screen and (max-width: 900px){
     .section__1{
-        height: 90vh;
+        height: 1000px;
         
         .fondos1{
-            height: 85vh;
+            height: 900px;
 
             
             .grid1{
@@ -833,7 +924,7 @@ footer{
                     }
 
                     img#img{
-                        height: 250px;
+                        height: 200px;
                     }
                 }
         
@@ -873,6 +964,7 @@ footer{
 
 
     .section4{
+        height: 1300px;
         font-family: 'Roboto', sans-serif;
         
     
@@ -957,13 +1049,8 @@ footer{
     }
     
     footer{
-        width: 100%;
-        background-color: $bg-section3;
-        display: flex;
-        height: 220px;
-        align-items: center;
-        z-index: 10;
-    
+        bottom: 0;
+        
         .footer__section{
             margin-left: 10px;
             font-size: 14px;
@@ -984,4 +1071,60 @@ footer{
     
     }
     
+
+    .section__nosotros__ubi{
+        height: 1000px;
+        .section__nosotros__infoubi{
+            width: 100%;
+            height: 1000px;
+            background-color: $bg-header;
+           
+            h1{
+                color: white;
+                text-align: center;
+    
+            }
+           
+            .section__nosotros__infoubi1{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 50px;
+                p{
+                    color: white;
+                    font-size: 2rem;
+                }
+                iframe{
+                    border-radius: 1%;
+                }
+            }
+    
+            .section__nosotros__telefono{
+                display: flex;
+                flex-direction: row;
+                justify-content: stretch;
+                margin-top: 100px;
+                justify-content: center;
+                gap: 20px;
+                
+                img{
+                    height: 60px;
+                }
+                p{
+                    color: white;
+                    align-items: center;
+                    font-size: 40px;
+                }
+            }
+    
+        }
+    
+    
+    
+    }
+
+
+
 }
+
